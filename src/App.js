@@ -124,35 +124,35 @@ function App() {
     pageAnimationTopBarTimeOut();
     setTimeout(() => {
       setShowAbout(false);
-    }, 350);
+    }, 400);
     setShowHome(true);
   };
   const hideResumepage = () => {
     pageAnimationTopBarTimeOut();
     setTimeout(() => {
       setShowResume(false);
-    }, 350);
+    }, 400);
     setShowHome(true);
   };
   const hidePortfoliopage = () => {
     pageAnimationTopBarTimeOut();
     setTimeout(() => {
       setShowPortfolio(false);
-    }, 350);
+    }, 400);
     setShowHome(true);
   };
   const hideBlogpage = () => {
     pageAnimationTopBarTimeOut();
     setTimeout(() => {
       setShowBlog(false);
-    }, 350);
+    }, 400);
     setShowHome(true);
   };
   const hideContactpage = () => {
     pageAnimationTopBarTimeOut();
     setTimeout(() => {
       setShowContact(false);
-    }, 350);
+    }, 400);
     setShowHome(true);
   };
 
