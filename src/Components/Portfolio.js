@@ -63,7 +63,7 @@ function Portfolio(props) {
       >
         +
       </p>
-      <div className="w-full h-full pt-[4rem] pb-[3rem] ">
+      <div className="w-full pt-[4rem] pb-[3rem] ">
         <div className="w-full text-center text-white relative z-10 desktop3:pb-[45px] sm2:pb-[0px] pb-[15px]">
           <h1 className="sm2:text-[30px] sm4:text-[25px] text-[22px] font-semibold">
             Portfolio

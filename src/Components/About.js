@@ -12,7 +12,7 @@ const About = (props) => {
       <p onClick={() => { props.hideAboutpage() }} className={`w-[25px] h-[25px]  ${props.goHomePageButton ? "flex" : "hidden"} [@media(min-width:555px)]:text-[35px] text-[30px] rotate-[45deg] text-center justify-center items-center absolute [@media(min-width:555px)]:top-[1rem] top-[10px] [@media(min-width:555px)]:right-[1rem] right-[13px] cursor-pointer z-20 rounded-[50%]`}>
         +
       </p>
-      <div className="w-full h-full pt-[4rem] pb-[3rem] ">
+      <div className="w-full pt-[4rem] pb-[3rem] ">
 
         <div className="w-full text-center text-white relative z-10 desktop3:pb-[45px] sm2:pb-[0px] pb-[15px]">
           <p className="text-[#03BFFF] sm2:text-[15px] sm4:text-[13px] text-[12px] sm4:w-[385px] w-[285px] mx-auto sm4:leading-[20px] leading-[16px]">
