@@ -4,38 +4,43 @@ import logo from "../image/kodify.png";
 import { HiOutlineMenu } from "react-icons/hi";
 
 
-function Navber() {
+function Navber(props) {
   const [nevMobileVButton, setNevMobileVButton] = useState(false);
 
   const navItems = [
     {
       id: 1,
       name: "About",
+      onClick: props.showAboutPage,
     },
     {
       id: 2,
       name: "Resume",
+      onClick: props.showResumePage,
     },
     {
       id: 3,
       name: "Portfolio",
+      onClick: props.showPortfolioPage,
     },
     {
       id: 4,
       name: "Blog",
+      onClick: props.showBlogPage,
     },
     {
       id: 5,
       name: "Contact",
+      onClick: props.showContactPage,
     },
   ];
 
   return (
-    <div className={` w-full flex fixed top-[0px] z-50`}>
+    <div className={` w-full ${props.showHome ? "flex" : "hidden"} fixed top-[0px] z-30`}>
       <nav
         className={`text-white w-full relative bg-transparent`}
       >
-        <div className="mx-auto [@media(min-width:600px)]:px-[3rem] [@media(min-width:400px)]:px-[2rem] px-[1.5rem] w-[100%]" data-aos="fade-down">
+        <div className="mx-auto [@media(min-width:600px)]:px-[3rem] [@media(min-width:400px)]:px-[2rem] px-[1.5rem] w-[100%]" >
           <div className="items-center [@media(min-width:530px)]:h-[5rem] h-[4rem] flex justify-between w-full Poppins">
             <div className="flex items-center z-[2]">
               <img
@@ -50,6 +55,7 @@ function Navber() {
                   return (
                     <p
                       key={key.id}
+                      onClick={key.onClick}
                       className="sm:px-3 px-[5px] py-2 text-sm font-medium cursor-pointer"
                     >
                       {key.name}
@@ -67,7 +73,7 @@ function Navber() {
               } z-[2]`}
               onClick={() => setNevMobileVButton(true)}
             >
-              <HiOutlineMenu className="[@media(min-width:420px)]:text-[25px] text-[23px]" />
+              <HiOutlineMenu className="[@media(min-width:555px)]:text-[25px] text-[20px]" />
             </div>
             <div
               className={`${
@@ -77,7 +83,7 @@ function Navber() {
               } z-[2]`}
               onClick={() => setNevMobileVButton(false)}
             >
-              <p className="[@media(min-width:420px)]:text-[40px] text-[38px] rotate-[45deg]">
+              <p className="[@media(min-width:555px)]:text-[40px] text-[35px] rotate-[45deg]">
                 +
               </p>
             </div>
@@ -92,8 +98,8 @@ function Navber() {
                   return (
                     <p
                       key={key.id}
-                      className="sm:px-3 px-[5px] py-2 [@media(min-width:420px)]:text-base text-[14px] font-medium cursor-pointer block"
-                      onClick={() => setNevMobileVButton(false)}
+                      className="sm:px-3 px-[5px] py-2 [@media(min-width:420px)]:text-base text-[14px] font-[400] cursor-pointer block"
+                      onClick={() => {setNevMobileVButton(false); key.onClick()}}
                     >
                       {key.name}
                     </p>

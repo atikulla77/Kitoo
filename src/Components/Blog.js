@@ -4,19 +4,19 @@ import web_kit_mask_main_image from "../image/about/web_kit_mask_main_image.png"
 import image from "../image/about/image.jpg";
 import raward from "../image/about/raward.png";
 
-const About = (props) => {
+const Blog = (props) => {
   return (
     <main
       className={`w-full h-full relative GeologicaFont`}
     >
-      <p onClick={() => { props.hideAboutpage() }} className={`w-[25px] h-[25px]  ${props.goHomePageButton ? "flex" : "hidden"} [@media(min-width:555px)]:text-[35px] text-[30px] rotate-[45deg] text-center justify-center items-center absolute [@media(min-width:555px)]:top-[1rem] top-[10px] [@media(min-width:555px)]:right-[1rem] right-[13px] cursor-pointer z-20 rounded-[50%]`}>
+      <p onClick={() => { props.hideBlogpage() }} className={`w-[25px] h-[25px]  ${props.goHomePageButton ? "flex" : "hidden"} [@media(min-width:555px)]:text-[35px] text-[30px] rotate-[45deg] text-center justify-center items-center absolute [@media(min-width:555px)]:top-[1rem] top-[10px] [@media(min-width:555px)]:right-[1rem] right-[13px] cursor-pointer z-20 rounded-[50%]`}>
         +
       </p>
       <div className="w-full h-full pt-[4rem] pb-[3rem] ">
 
         <div className="w-full text-center text-white relative z-10 desktop3:pb-[45px] sm2:pb-[0px] pb-[15px]">
           <p className="text-[#03BFFF] sm2:text-[15px] sm4:text-[13px] text-[12px] sm4:w-[385px] w-[285px] mx-auto sm4:leading-[20px] leading-[16px]">
-            About Me
+            Blog Me
           </p>
           <h1 className="sm2:text-[30px] sm4:text-[25px] text-[22px] font-semibold">
             A Passionate Expart
@@ -137,4 +137,4 @@ const About = (props) => {
   );
 };
 
-export default About;
+export default Blog;
