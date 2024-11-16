@@ -52,11 +52,11 @@ function App() {
 
     setTimeout(() => {
       setShowHome(false);
-    }, 500);
+    }, 400);
 
     setTimeout(() => {
       setgoHomePageButton(true);
-    }, 2000);
+    }, 1900);
   };
   //  `````````````Go To Resume Page-----
   const GoResumePage = () => {
@@ -67,11 +67,11 @@ function App() {
 
     setTimeout(() => {
       setShowHome(false);
-    }, 500);
+    }, 400);
 
     setTimeout(() => {
       setgoHomePageButton(true);
-    }, 2000);
+    }, 1900);
   };
   //  `````````````Go To Portfolio Page-----
   const GoPortfolioPage = () => {
@@ -82,11 +82,11 @@ function App() {
 
     setTimeout(() => {
       setShowHome(false);
-    }, 500);
+    }, 400);
 
     setTimeout(() => {
       setgoHomePageButton(true);
-    }, 2000);
+    }, 1900);
   };
   //  `````````````Go To Blog Page-----
   const GoBlogPage = () => {
@@ -97,11 +97,11 @@ function App() {
 
     setTimeout(() => {
       setShowHome(false);
-    }, 500);
+    }, 400);
 
     setTimeout(() => {
       setgoHomePageButton(true);
-    }, 2000);
+    }, 1900);
   };
   //  `````````````Go To Contact Page-----
   const GoContactPage = () => {
@@ -112,11 +112,11 @@ function App() {
 
     setTimeout(() => {
       setShowHome(false);
-    }, 500);
+    }, 400);
 
     setTimeout(() => {
       setgoHomePageButton(true);
-    }, 2000);
+    }, 1900);
   };
 
   //  `````````````Back To Home Page-----
@@ -124,35 +124,35 @@ function App() {
     pageAnimationTopBarTimeOut();
     setTimeout(() => {
       setShowAbout(false);
-    }, 500);
+    }, 350);
     setShowHome(true);
   };
   const hideResumepage = () => {
     pageAnimationTopBarTimeOut();
     setTimeout(() => {
       setShowResume(false);
-    }, 500);
+    }, 350);
     setShowHome(true);
   };
   const hidePortfoliopage = () => {
     pageAnimationTopBarTimeOut();
     setTimeout(() => {
       setShowPortfolio(false);
-    }, 500);
+    }, 350);
     setShowHome(true);
   };
   const hideBlogpage = () => {
     pageAnimationTopBarTimeOut();
     setTimeout(() => {
       setShowBlog(false);
-    }, 500);
+    }, 350);
     setShowHome(true);
   };
   const hideContactpage = () => {
     pageAnimationTopBarTimeOut();
     setTimeout(() => {
       setShowContact(false);
-    }, 500);
+    }, 350);
     setShowHome(true);
   };
 
@@ -244,7 +244,7 @@ function App() {
         {/* About Page */}
         <div
           className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto ${
-            showAbout ? "showPageAnimation bottom-[0%]" : "hidden"
+            showAbout ? " bottom-[0%]" : "hidden"
           }  absolute left-0 right-0 z-40 bg-[#111]`}
           id="About"
         >
@@ -253,7 +253,7 @@ function App() {
         {/* Resume Page */}
         <div
           className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto ${
-            showResume ? "showPageAnimation bottom-[0%]" : "hidden"
+            showResume ? " bottom-[0%]" : "hidden"
           }  absolute left-0 right-0 z-40 bg-[#111]`}
           id="Resume"
         >
@@ -262,7 +262,7 @@ function App() {
         {/* Portfolio Page */}
         <div
           className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto ${
-            showPortfolio ? "showPageAnimation bottom-[0%]" : "hidden"
+            showPortfolio ? " bottom-[0%]" : "hidden"
           }  absolute left-0 right-0 z-40 bg-[#111]`}
           id="Portfolio"
         >
@@ -271,7 +271,7 @@ function App() {
         {/* Blog Page */}
         <div
           className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto ${
-            showBlog ? "showPageAnimation bottom-[0%]" : "hidden"
+            showBlog ? " bottom-[0%]" : "hidden"
           }  absolute left-0 right-0 z-40 bg-[#111]`}
           id="Blog"
         >
@@ -280,7 +280,7 @@ function App() {
         {/* Contact Page */}
         <div
           className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto ${
-            showContact ? "showPageAnimation bottom-[0%]" : "hidden"
+            showContact ? " bottom-[0%]" : "hidden"
           }  absolute left-0 right-0 z-40 bg-[#111]`}
           id="Contact"
         >

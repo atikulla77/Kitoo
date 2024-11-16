@@ -157,7 +157,7 @@ body{
 /* =-=-=-=-=-=-=-=-=-=-=-=Main Animation Bar=-=-=-=-=-=-=-=-=-=-=-= */
 /* animation Top */
 .siteMainAnimationTop{
-  animation: mainAnimationTopBar 1.8s forwards;
+  animation: mainAnimationTopBar 1.3s forwards;
 }
 @keyframes mainAnimationTopBar {
   from {top: -100%;}
@@ -166,19 +166,10 @@ body{
 
 /* animation bottom */
 .siteMainAnimationBottom{
-  animation: mainAnimationBottomBar 1.8s backwards;
+  animation: mainAnimationBottomBar 1.5s backwards;
 }
 @keyframes mainAnimationBottomBar {
   from {bottom: -100%;}
   to {bottom: 100%;}
-}
-
-
-.showPageAnimation{
-  animation: pageAnimation 1.6s backwards;
-}
-@keyframes pageAnimation {
-  from {bottom: -100%;}
-  to {bottom: 0%;}
 }
 
