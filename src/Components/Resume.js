@@ -6,16 +6,20 @@ import raward from "../image/about/raward.png";
 
 const Resume = (props) => {
   return (
-    <main
-      className={`w-full h-full relative GeologicaFont`}
-    >
-      <p onClick={() => { props.hideResumepage() }} className={`w-[25px] h-[25px]  ${props.goHomePageButton ? "flex" : "hidden"} [@media(min-width:555px)]:text-[35px] text-[30px] rotate-[45deg] text-center justify-center items-center absolute [@media(min-width:555px)]:top-[1rem] top-[10px] [@media(min-width:555px)]:right-[1rem] right-[13px] cursor-pointer z-20 rounded-[50%]`}>
+    <main className={`w-full h-full relative GeologicaFont`}>
+      <p
+        onClick={() => {
+          props.hideResumepage();
+        }}
+        className={`w-[25px] h-[25px]  ${
+          props.goHomePageButton ? "flex" : "hidden"
+        } [@media(min-width:555px)]:text-[35px] text-[30px] rotate-[45deg] text-center justify-center items-center absolute [@media(min-width:555px)]:top-[1rem] top-[10px] [@media(min-width:555px)]:right-[1rem] right-[13px] cursor-pointer z-20 rounded-[50%]`}
+      >
         +
       </p>
       <div className="w-full pt-[4rem] pb-[3rem] ">
-
         <div className="w-full text-center text-white relative z-10 desktop3:pb-[45px] sm2:pb-[0px] pb-[15px]">
-          <p className="text-[#03BFFF] sm2:text-[15px] sm4:text-[13px] text-[12px] sm4:w-[385px] w-[285px] mx-auto sm4:leading-[20px] leading-[16px]">
+          <p className="text-[#06f3f7] sm2:text-[15px] sm4:text-[13px] text-[12px] sm4:w-[385px] w-[285px] mx-auto sm4:leading-[20px] leading-[16px]">
             Resume Me
           </p>
           <h1 className="sm2:text-[30px] sm4:text-[25px] text-[22px] font-semibold">
@@ -58,9 +62,8 @@ const Resume = (props) => {
               <div
                 className={`absolute lg:bottom-[8px] sm5:bottom-[11px] bottom-[8px] right-[0px] stext1:w-[250px] lg:w-[205px] sm5:w-[190px] sm4:w-[160px] sm3:w-[130px] w-[124px] lg:h-[100px] sm5:h-[85px] sm3:h-[62px] h-[60px] z-[1] overflow-hidden flex items-center`}
               >
-                <div className="h-full lg:w-[8px] sm4:w-[5px] w-[4px] bg-[#03BFFF]"></div>
-                <div className="flex items-center text-white sm4:pl-[17px] pl-[7px]"
-                >
+                <div className="h-full lg:w-[8px] sm4:w-[5px] w-[4px] bg-[#06f3f7]"></div>
+                <div className="flex items-center text-white sm4:pl-[17px] pl-[7px]">
                   <h1 className="lg:text-[55px] sm5:text-[50px] text-[40px] sm5:font-bold font-semibold">
                     3
                   </h1>
@@ -71,13 +74,19 @@ const Resume = (props) => {
                 </div>
               </div>
             </div>
-            <div
-              className="desktop4:w-[465px] desktop3:w-[415px] sm2:w-[530px] w-[98%] text-white desktop3:text-left text-center desktop3:mt-[0px] mt-[40px] relative"
-            >
+            <div className="desktop4:w-[465px] desktop3:w-[415px] sm2:w-[530px] w-[98%] text-white desktop3:text-left text-center desktop3:mt-[0px] mt-[40px] relative">
               <p className="text-[20px] font-bold z-10 relative">My Bio</p>
               <p className="sm2:text-[15px] sm5:text-[14px] text-[13px] sm2:font-extralight font-thin text-[#ffffffab] sm4:pt-[13px] pt-[5px] sm2:tracking-[0.3px] tracking-[0.2px] sm2:leading-[21px] leading-[18px] z-10 relative">
                 <span className="  ">
-                  Hi! I'm Atikulla, a passionate web developer with a deep love for coding. I specialize in creating dynamic, user-friendly websites and applications that not only look great but also perform seamlessly. With a strong foundation in web technologies and an eye for detail, I’m always eager to tackle new challenges and bring innovative ideas to life. Whether it’s front-end design or back-end development, I enjoy the process of turning complex problems into simple, functional solutions.
+                  Hi! I'm Atikulla, a passionate web developer with a deep love
+                  for coding. I specialize in creating dynamic, user-friendly
+                  websites and applications that not only look great but also
+                  perform seamlessly. With a strong foundation in web
+                  technologies and an eye for detail, I’m always eager to tackle
+                  new challenges and bring innovative ideas to life. Whether
+                  it’s front-end design or back-end development, I enjoy the
+                  process of turning complex problems into simple, functional
+                  solutions.
                 </span>
                 <br />
                 <span className="  ">
@@ -89,19 +98,25 @@ const Resume = (props) => {
               <div className="border-[2px] border-[#ffffff42] w-full desktop4:h-[205px] desktop3:h-[200px] sm5:h-[205px] sm3:h-[200px] h-[392px] rounded-[15px] sm3:flex block mt-[20px] mb-[22px] sm3:pt-0 pt-[20px] z-10 relative">
                 <div className="sm3:w-[50%] w-[100%] sm3:h-full h-[180px] sm3:border-r-[1px] border-[0px] border-r-[#ffffff42] desktop4:pl-[30px] desktop3:pl-[20px] sm5:pl-[30px] sm3:pl-[18px] pl-[20px] desktop4:py-[20px] sm5:py-[10px] sm3:py-[10px] py-0 flex flex-wrap items-center text-left justify-start">
                   <div className="w-full h-[50px]">
-                    <p className="sm4:text-[15px] text-[14px] font-[400]">Name</p>
+                    <p className="sm4:text-[15px] text-[14px] font-[400]">
+                      Name
+                    </p>
                     <p className="sm4:text-[14px] text-[13px] font-extralight text-[#ffffffab]">
                       Md Atikulla
                     </p>
                   </div>
                   <div className="w-full h-[50px]">
-                    <p className="sm4:text-[15px] text-[14px] font-[400]">Email</p>
+                    <p className="sm4:text-[15px] text-[14px] font-[400]">
+                      Email
+                    </p>
                     <p className="sm4:text-[14px] text-[13px] font-extralight text-[#ffffffab]">
                       kodify345@gmail.com
                     </p>
                   </div>
                   <div className="w-full h-[50px]">
-                    <p className="sm4:text-[15px] text-[14px] font-[400]">Phone</p>
+                    <p className="sm4:text-[15px] text-[14px] font-[400]">
+                      Phone
+                    </p>
                     <p className="sm4:text-[14px] text-[13px] font-extralight text-[#ffffffab]">
                       +880 173 966 3503
                     </p>
@@ -109,19 +124,25 @@ const Resume = (props) => {
                 </div>
                 <div className="sm3:w-[50%] w-[100%] sm3:h-full h-[180px] sm3:border-l-[1px] border-[0px] border-l-[#ffffff42] desktop4:pl-[30px] desktop3:pl-[20px] sm5:pl-[30px] sm3:pl-[18px] pl-[20px] desktop4:py-[25px] sm5:py-[15px] sm3:py-[10px] py-0 flex flex-wrap items-center text-left justify-start">
                   <div className="w-full h-[50px]">
-                    <p className="sm4:text-[15px] text-[14px] font-[400]">Address</p>
+                    <p className="sm4:text-[15px] text-[14px] font-[400]">
+                      Address
+                    </p>
                     <p className="sm4:text-[14px] text-[13px] font-extralight text-[#ffffffab]">
                       Rajshahi, Paba 6210
                     </p>
                   </div>
                   <div className="w-full h-[50px]">
-                    <p className="sm4:text-[15px] text-[14px] font-[400]">DOB</p>
+                    <p className="sm4:text-[15px] text-[14px] font-[400]">
+                      DOB
+                    </p>
                     <p className="sm4:text-[14px] text-[13px] font-extralight text-[#ffffffab]">
                       June 21, 2000
                     </p>
                   </div>
                   <div className="w-full h-[50px]">
-                    <p className="sm4:text-[15px] text-[14px] font-[400]">Freelance</p>
+                    <p className="sm4:text-[15px] text-[14px] font-[400]">
+                      Freelance
+                    </p>
                     <p className="sm4:text-[14px] text-[13px] font-extralight text-[#ffffffab]">
                       Available
                     </p>
@@ -130,7 +151,6 @@ const Resume = (props) => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </main>

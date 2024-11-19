@@ -59,7 +59,9 @@ function Portfolio(props) {
         onClick={() => {
           props.hidePortfoliopage();
         }}
-        className={`w-[25px] h-[25px]  ${props.goHomePageButton ? "flex" : "hidden"} [@media(min-width:555px)]:text-[35px] text-[30px] rotate-[45deg] text-center justify-center items-center absolute [@media(min-width:555px)]:top-[1rem] top-[10px] [@media(min-width:555px)]:right-[1rem] right-[13px] cursor-pointer z-20 rounded-[50%]`}
+        className={`w-[25px] h-[25px]  ${
+          props.goHomePageButton ? "flex" : "hidden"
+        } [@media(min-width:555px)]:text-[35px] text-[30px] rotate-[45deg] text-center justify-center items-center absolute [@media(min-width:555px)]:top-[1rem] top-[10px] [@media(min-width:555px)]:right-[1rem] right-[13px] cursor-pointer z-20 rounded-[50%]`}
       >
         +
       </p>
@@ -68,7 +70,7 @@ function Portfolio(props) {
           <h1 className="sm2:text-[30px] sm4:text-[25px] text-[22px] font-semibold">
             Portfolio
           </h1>
-          <p className="text-[#03BFFF] sm2:text-[15px] sm4:text-[13px] text-[12px] sm4:w-[385px] w-[285px] mx-auto sm4:leading-[20px] leading-[16px]">
+          <p className="text-[#06f3f7] sm2:text-[15px] sm4:text-[13px] text-[12px] sm4:w-[385px] w-[285px] mx-auto sm4:leading-[20px] leading-[16px]">
             Showcasing some of my recent work
           </p>
         </div>

@@ -165,7 +165,7 @@ function App() {
   });
 
   return (
-    <div className="w-full h-[100%] bg-[#111] relative">
+    <div className="w-full h-[100%] bg-[#101010] relative">
       {/* Home Page */}
       <div className={`w-full h-[100vh]  overflow-hidden relative`}>
         <Navber
@@ -193,13 +193,13 @@ function App() {
         ></div>
         {/* Top Animation To Go Others Page */}
         <div
-          className={`bg-[#111] w-full h-[100vh] absolute left-0 right-0 z-50 ${
+          className={`bg-[#101010] w-full h-[100vh] absolute left-0 right-0 z-50 ${
             pageAnimationTop ? "siteMainAnimationTop" : "top-[100%] hidden"
           }`}
         ></div>
         {/* Bottom Animation To Go Home Page */}
         <div
-          className={`bg-[#111] w-full h-[100vh] absolute left-0 right-0 z-50 ${
+          className={`bg-[#101010] w-full h-[100vh] absolute left-0 right-0 z-50 ${
             pageAnimationBottom
               ? "siteMainAnimationBottom"
               : "bottom-[100%] hidden"
@@ -245,7 +245,7 @@ function App() {
         <div
           className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto ${
             showAbout ? " bottom-[0%]" : "hidden"
-          }  absolute left-0 right-0 z-40 bg-[#111]`}
+          }  absolute left-0 right-0 z-40 bg-[#101010]`}
           id="About"
         >
           <About hideAboutpage={hideAboutpage} goHomePageButton={goHomePageButton} />
@@ -254,7 +254,7 @@ function App() {
         <div
           className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto ${
             showResume ? " bottom-[0%]" : "hidden"
-          }  absolute left-0 right-0 z-40 bg-[#111]`}
+          }  absolute left-0 right-0 z-40 bg-[#101010]`}
           id="Resume"
         >
           <Resume hideResumepage={hideResumepage} goHomePageButton={goHomePageButton} />
@@ -263,7 +263,7 @@ function App() {
         <div
           className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto ${
             showPortfolio ? " bottom-[0%]" : "hidden"
-          }  absolute left-0 right-0 z-40 bg-[#111]`}
+          }  absolute left-0 right-0 z-40 bg-[#101010]`}
           id="Portfolio"
         >
           <Portfolio hidePortfoliopage={hidePortfoliopage} goHomePageButton={goHomePageButton} />
@@ -272,7 +272,7 @@ function App() {
         <div
           className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto ${
             showBlog ? " bottom-[0%]" : "hidden"
-          }  absolute left-0 right-0 z-40 bg-[#111]`}
+          }  absolute left-0 right-0 z-40 bg-[#101010]`}
           id="Blog"
         >
           <Blog hideBlogpage={hideBlogpage} goHomePageButton={goHomePageButton} />
@@ -281,7 +281,7 @@ function App() {
         <div
           className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto ${
             showContact ? " bottom-[0%]" : "hidden"
-          }  absolute left-0 right-0 z-40 bg-[#111]`}
+          }  absolute left-0 right-0 z-40 bg-[#101010]`}
           id="Contact"
         >
           <Contact hideContactpage={hideContactpage} goHomePageButton={goHomePageButton} />

@@ -1,4 +1,4 @@
-body{
+body {
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
@@ -13,22 +13,21 @@ body{
   background: #ccc;
 }
 
-
 /* =-=-=-=-=-=-=-=-=-=-=-=Home=-=-=-=-=-=-=-=-=-=-=-= */
-.textAnimation{
+.textAnimation {
   width: 246px;
   overflow: hidden;
 }
-.textAnimation .text{
+.textAnimation .text {
   position: relative;
-  color: #4070F4;
+  color: #4070f4;
   font-size: 30px;
   font-weight: 600;
 }
-.textAnimation .text.first-text{
-  color: #FFF;
+.textAnimation .text.first-text {
+  color: #fff;
 }
-.text.sec-text:before{
+.text.sec-text:before {
   content: "";
   position: absolute;
   top: 0;
@@ -36,22 +35,22 @@ body{
   height: 100%;
   width: 100%;
   background-color: #010718;
-  border-left: 2px solid #4070F4;
+  border-left: 2px solid #4070f4;
   animation: animate 4s steps(12) infinite;
 }
-@keyframes animate{
-  40%, 60%{
-      left: calc(100% + 4px);
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
   }
-  100%{
-      left: 0%;
+  100% {
+    left: 0%;
   }
 }
 .social_icon_hover:hover {
-  background: #03bfff;
+  background: #06f3f7;
   color: white;
 }
-
 
 /* =-=-=-=-=-=-=-=-=-=-=-=Testimonial=-=-=-=-=-=-=-=-=-=-=-= */
 
@@ -70,35 +69,8 @@ body{
   }
 }
 #bannerDotId .slick-active .bannerDotliId {
-  color: #03bfff;
+  color: #06f3f7;
 }
-
-
-/* =-=-=-=-=-=-=-=-=-=-=-=Contact=-=-=-=-=-=-=-=-=-=-=-= */
-
-.inputStyleIng[type="text"]:focus ~ .inputStyleIngText,
-.inputStyleIng[type="text"]:not(:placeholder-shown) ~ .inputStyleIngText {
-  @apply text-[#03bfff] bg-[#0a012a] transform -translate-y-[22px] -translate-x-[3px] scale-75 cursor-default;
-}
-.inputStyleIng[type="email"]:focus ~ .inputStyleIngText,
-.inputStyleIng[type="email"]:not(:placeholder-shown) ~ .inputStyleIngText {
-  @apply text-[#03bfff] bg-[#0a012a] transform -translate-y-[22px] -translate-x-[3px] scale-75 cursor-default;
-}
-.inputStyleIng[type="password"]:focus ~ .inputStyleIngText,
-.inputStyleIng[type="password"]:not(:placeholder-shown) ~ .inputStyleIngText {
-  @apply text-[#03bfff] bg-[#0a012a] transform -translate-y-[22px] -translate-x-[3px] scale-75 cursor-default;
-}
-
-.inputStyleIng[type="file"]:focus ~ .inputStyleIngText,
-.inputStyleIng[type="file"]:not(:placeholder-shown) ~ .inputStyleIngText {
-  @apply text-[#03bfff] bg-[#0a012a] transform -translate-y-[22px] -translate-x-[3px] scale-75 cursor-default;
-}
-
-.inputStyleIng[type="tel"]:focus ~ .inputStyleIngText,
-.inputStyleIng[type="tel"]:not(:placeholder-shown) ~ .inputStyleIngText {
-  @apply text-[#03bfff] bg-[#0a012a] transform -translate-y-[22px] -translate-x-[3px] scale-75 cursor-default;
-}
-
 
 /* =-=-=-=-=-=-=-=-=-=-=-=Why-hoose-Us=-=-=-=-=-=-=-=-=-=-=-= */
 
@@ -115,11 +87,11 @@ body{
   position: absolute;
   width: 80px;
   height: 155%;
-  background: linear-gradient(#03BFFF, #03BFFF);
+  background: linear-gradient(#06f3f7, #06f3f7);
   transform: rotate(130deg);
 }
 
-.why_choose_us_box_container::after{
+.why_choose_us_box_container::after {
   content: "";
   position: absolute;
   inset: 3px;
@@ -128,11 +100,10 @@ body{
   z-index: 0;
 }
 
-
 /* =-=-=-=-=-=-=-=-=-=-=-=Service=-=-=-=-=-=-=-=-=-=-=-= */
 
 .S_Card {
-  background: linear-gradient(#26185669 50%, #03BFFF 50%);
+  background: linear-gradient(#26185669 50%, #06f3f7 50%);
   background-size: 100% 200%;
   background-position: 0 2.5%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
@@ -144,7 +115,7 @@ body{
 }
 .S_Card:hover .S_Icon_Wrapper {
   background-color: #ffffff;
-  color: #03BFFF;
+  color: #06f3f7;
 }
 .S_Card:hover h3 {
   color: #ffffff;
@@ -153,23 +124,29 @@ body{
   color: #f0f0f0;
 }
 
-
 /* =-=-=-=-=-=-=-=-=-=-=-=Main Animation Bar=-=-=-=-=-=-=-=-=-=-=-= */
 /* animation Top */
-.siteMainAnimationTop{
+.siteMainAnimationTop {
   animation: mainAnimationTopBar 1.3s forwards;
 }
 @keyframes mainAnimationTopBar {
-  from {top: -100%;}
-  to {top: 100%;}
+  from {
+    top: -100%;
+  }
+  to {
+    top: 100%;
+  }
 }
 
 /* animation bottom */
-.siteMainAnimationBottom{
+.siteMainAnimationBottom {
   animation: mainAnimationBottomBar 1.5s backwards;
 }
 @keyframes mainAnimationBottomBar {
-  from {bottom: -100%;}
-  to {bottom: 100%;}
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 100%;
+  }
 }
-
