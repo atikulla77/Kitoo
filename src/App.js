@@ -263,7 +263,7 @@ function App() {
         <div
           className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto ${
             showPortfolio ? " bottom-[0%]" : "hidden"
-          }  absolute left-0 right-0 z-40 bg-[#101010]`}
+          }  absolute left-0 right-0 z-40 bg-[#101010] `}
           id="Portfolio"
         >
           <Portfolio hidePortfoliopage={hidePortfoliopage} goHomePageButton={goHomePageButton} />

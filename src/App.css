@@ -150,3 +150,27 @@ body {
     bottom: 100%;
   }
 }
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-{````Protfolio````}_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+.portfolioCardImgInfo{
+  display: none;
+}
+.portfolioCard:hover .portfolioCardImgInfo{
+  display: flex;
+}
+
+/* ////////////-animation-\\\\\\\\\\\\\ */
+.protfolioCardAnimation{
+  animation: protfolioAnimation1 0.1s linear;
+}
+
+@keyframes protfolioAnimation1{
+  from{
+    width: 0%;
+    height: 0%;
+  }
+  to{
+    width: 100%;
+    height: 100%;
+  }
+}
