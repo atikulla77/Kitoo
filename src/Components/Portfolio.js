@@ -126,11 +126,11 @@ const Protfolio = (props) => {
           +
         </p>
 
-        <div className="w-full text-center text-white relative z-10 sm2:pb-[25px] pb-[15px] pt-[3.5rem]">
+        <div className="w-full text-center text-white relative z-10 sm2:pb-[25px] pb-[15px] pt-[4.5rem]">
           <h1 className="sm2:text-[30px] sm4:text-[25px] text-[22px] font-semibold">
             Projects
           </h1>
-          <p className="text-[#03BFFF] [@media(min-width:450px)]:text-[13px] text-[12px] mx-auto pt-[5px]">
+          <p className="text-[#06f3f7] [@media(min-width:450px)]:text-[13px] text-[12px] mx-auto pt-[5px]">
             Take A Look At Our Latest Portfolio
           </p>
         </div>
@@ -140,8 +140,8 @@ const Protfolio = (props) => {
             <li
               className={`pb-[3px] [@media(min-width:450px)]:w-[35px] w-[27px] sm2:text-[15px] [@media(min-width:450px)]:text-[14px] text-[13px] cursor-pointer ${
                 onClickProjectLi1 === "true"
-                  ? "text-[#03BFFF] border-b-[2px] border-b-[#03BFFF]"
-                  : "text-[#fff] hover:text-[#03BFFF] border-b-[2px] border-b-[#101010] hover:border-b-[#03BFFF] transition-[0.1s]"
+                  ? "text-[#06f3f7] border-b-[2px] border-b-[#06f3f7]"
+                  : "text-[#fff] hover:text-[#06f3f7] border-b-[2px] border-b-[#101010] hover:border-b-[#06f3f7] transition-[0.1s]"
               }`}
               onClick={HandleProjectLi1}
             >
@@ -154,8 +154,8 @@ const Protfolio = (props) => {
                   key={key.id}
                   className={`pb-[3px] [@media(min-width:450px)]:w-[60px] w-[50px] sm2:text-[15px] [@media(min-width:450px)]:text-[14px] text-[13px] cursor-pointer ${
                     key.dynamicClassName === "true"
-                      ? "text-[#03BFFF] border-b-[2px] border-b-[#03BFFF]"
-                      : "text-[#fff] hover:text-[#03BFFF] border-b-[2px] border-b-[#101010] hover:border-b-[#03BFFF] transition-[0.1s]"
+                      ? "text-[#06f3f7] border-b-[2px] border-b-[#06f3f7]"
+                      : "text-[#fff] hover:text-[#06f3f7] border-b-[2px] border-b-[#101010] hover:border-b-[#06f3f7] transition-[0.1s]"
                   }`}
                   onClick={key.onClick}
                 >

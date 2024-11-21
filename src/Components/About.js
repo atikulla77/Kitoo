@@ -17,7 +17,7 @@ const About = (props) => {
       >
         +
       </p>
-      <div className="w-full pt-[4rem] pb-[3rem] ">
+      <div className="w-full pt-[4.5rem] pb-[3rem] ">
         <div className="w-full text-center text-white relative z-10 desktop3:pb-[45px] sm2:pb-[0px] pb-[15px]">
           <p className="text-[#06f3f7] sm2:text-[15px] sm4:text-[13px] text-[12px] sm4:w-[385px] w-[285px] mx-auto sm4:leading-[20px] leading-[16px]">
             About Me

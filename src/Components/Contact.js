@@ -15,7 +15,7 @@ import { MdOutlineDriveFileRenameOutline } from "react-icons/md";
 const Contact = (props) => {
   return (
     <main className={`w-full h-full relative `}>
-      <div className="w-full h-full pt-[4rem] pb-[3rem] ">
+      <div className="w-full h-full pt-[4.5rem] pb-[3rem] ">
         <p
           onClick={() => {
             props.hideContactpage();
