@@ -252,13 +252,22 @@ function App() {
         </div>
         {/* Resume Page */}
         <div
-          className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto ${
-            showResume ? " bottom-[0%]" : "hidden"
-          }  absolute left-0 right-0 z-40 bg-[#101010]`}
+          className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto 
+            ${ showResume ? " bottom-[0%]" : "hidden" }
+              absolute left-0 right-0 z-40 bg-[#101010]`}
           id="Resume"
         >
           <Resume hideResumepage={hideResumepage} goHomePageButton={goHomePageButton} />
         </div>
+
+
+        {/* <div
+          className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto bottom-[0%]
+              absolute left-0 right-0 z-40 bg-[#101010]`}
+          id="Resume"
+        >
+          <Resume hideResumepage={hideResumepage} goHomePageButton={goHomePageButton} />
+        </div> */}
         {/* Portfolio Page */}
         <div
           className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto ${
