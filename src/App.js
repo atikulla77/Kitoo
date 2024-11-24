@@ -158,7 +158,7 @@ function App() {
 
   // --------------- Home ---------------
   const [text] = useTypewriter({
-    words: ["Developer", "Designer", "Freelancer"],
+    words: ["Developer", "Coder", "Player"],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 50,
@@ -250,6 +250,16 @@ function App() {
         >
           <About hideAboutpage={hideAboutpage} goHomePageButton={goHomePageButton} />
         </div>
+
+        
+        {/* <div
+          className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto bottom-[0%]
+              absolute left-0 right-0 z-40 bg-[#101010]`}
+          id="About"
+        >
+          <About hideResumepage={hideResumepage} goHomePageButton={goHomePageButton} />
+        </div> */}
+
         {/* Resume Page */}
         <div
           className={`w-full max-h-[100vh] h-[100vh] overflow-y-auto 

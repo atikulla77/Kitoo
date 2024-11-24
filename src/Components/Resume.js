@@ -74,7 +74,8 @@ const Resume = (props) => {
       >
         +
       </p>
-      <div className="w-full pt-[4.5rem] pb-[3rem] ">
+      {/* Resume Section */}
+      <div className="w-full pt-[4.5rem] pb-[4rem] ">
         <div className="w-full text-center text-white relative z-10 pb-[30px]">
           <h1 className="[@media(min-width:750px)]:text-[40px] [@media(min-width:420px)]:text-[30px] text-[25px] font-[700] [@media(min-width:750px)]:pb-[10px] pb-[5px] Poppins">
             Resume
@@ -142,7 +143,6 @@ const Resume = (props) => {
                 </div>
               );
             })}
-
           </div>
 
           <div className="w-[15px] h-[100%] [@media(min-width:790px)]:flex hidden"></div>
@@ -205,11 +205,94 @@ const Resume = (props) => {
                 </div>
               );
             })}
-
           </div>
         </div>
       </div>
+      {/* Skill Section */}
+      <SkillSection />
     </main>
+  );
+};
+
+const SkillSection = () => {
+  const skillDeta = [
+    {
+      id: 1,
+      name: "HTML/CSS",
+      progress: "95%",
+    },
+    {
+      id: 2,
+      name: "Tailwind",
+      progress: "90%",
+    },
+    {
+      id: 3,
+      name: "Boostrap",
+      progress: "90%",
+    },
+    {
+      id: 4,
+      name: "JavaScript",
+      progress: "90%",
+    },
+    {
+      id: 5,
+      name: "React JS",
+      progress: "85%",
+    },
+    {
+      id: 6,
+      name: "TypeScript",
+      progress: "85%",
+    },
+    {
+      id: 7,
+      name: "Node JS",
+      progress: "80%",
+    },
+    {
+      id: 8,
+      name: "Github",
+      progress: "80%",
+    },
+  ];
+  return (
+    <div className="w-full pb-[3rem] relative GeologicaFont ">
+      <div className="w-full text-center text-white relative z-10 pb-[30px]">
+          <h1 className="[@media(min-width:750px)]:text-[38px] [@media(min-width:420px)]:text-[28px] text-[23px] font-[700] [@media(min-width:750px)]:pb-[10px] pb-[5px] Poppins">
+          My Skills
+          </h1>
+          <p className="text-[#06f3f7] [@media(min-width:750px)]:text-[15px] [@media(min-width:420px)]:text-[14px] text-[13px] mx-auto">
+          My level of knowledge in some tools
+          </p>
+        </div>
+      <div className="mx-auto xl:w-[1230px] w-[96%] relative z-[1] grid [@media(min-width:790px)]:grid-cols-2 grid-cols-1 [@media(min-width:1100px)]:px-[20px] px-0 justify-center items-center">
+        {skillDeta.map((key) => {
+          return (
+            <div
+              key={key.id}
+              className="[@media(min-width:790px)]:w-[95%] [@media(min-width:465px)]:w-[28rem] w-[100%] mx-auto sm:!px-[10px] px-[1rem] [@media(min-width:450px)]:py-[15px] py-[10px]"
+            >
+              <div className="w-full relative [@media(min-width:450px)]:pb-[5px] pb-[3px]">
+              <p className="[@media(min-width:450px)]:text-[15px] [@media(min-width:400px)]:text-[14px] text-[13px] font-[500] ">
+                {key.name}
+              </p>
+              <p className={`absolute flex top-0 left-0 text-right [@media(min-width:450px)]:text-[15px] [@media(min-width:400px)]:text-[14px] text-[13px] justify-end`}
+              style={{ width: `${key.progress}` }}>{key.progress}</p>
+              </div>
+
+              <div className="w-full bg-[#a6adbb33] [@media(min-width:450px)]:h-[7px] h-[6px] dark:bg-[#a6adbb33]">
+                <div
+                  className={`bg-[#06f3f7] h-[100%]  w-[${key.progress}]`}
+                  style={{ width: `${key.progress}` }}
+                ></div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 
